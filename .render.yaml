@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pulsespace
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        value: https://ioxpzcxdknxzhwhzxlrl.supabase.co
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlveHB6Y3hka254emh3aHp4bHJsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMwMjQzMTksImV4cCI6MjA1ODYwMDMxOX0.LEK-WFwMmCYcL8wtlBHEyqbLiMQtAHoX08tNzPn9RtU
